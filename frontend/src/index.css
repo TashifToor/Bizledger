@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: #040d1a;
+  color: #e2e8f0;
+  margin: 0;
+}
+
+input, select, textarea {
+  color: #e2e8f0 !important;
+  background-color: #071224 !important;
+}
+
+input::placeholder { color: #475569 !important; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #040d1a; }
+::-webkit-scrollbar-thumb { background: #10b981; border-radius: 10px; }
+
+.mint-text {
+  background: linear-gradient(135deg, #10b981, #6ee7b7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mint-glow {
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.1);
+}
