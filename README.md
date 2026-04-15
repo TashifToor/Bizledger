@@ -1,55 +1,74 @@
-🚀 BizLedger - Multi-Tenant SaaS Financial Engine
-BizLedger is a high-performance, professional financial management system designed for small to medium businesses. Built with a focus on scalability, asynchronous processing, and secure multi-tenancy, it handles everything from automated invoicing to real-time financial reporting.
+<div align="center">
+  <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/master/icons/django.svg" width="100" height="100" alt="Django Logo" />
+  <h1>🚀 BizLedger</h1>
+  <p><b>The Ultimate Multi-Tenant SaaS Financial Engine</b></p>
 
-✨ Key Features
-🏢 Multi-Tenant Architecture: Secure data isolation for multiple business accounts on a single platform.
-⚡ Async Task Processing: Powered by Celery & Redis for background invoice generation, email triggers, and heavy reporting.
-🔐 Enterprise-Grade Auth: Secure stateless authentication using JWT (SimpleJWT).
-📊 Financial Dashboard: Real-time insights into revenue, expenses, and profit margins.
-📑 Invoice Management: Professional PDF invoice generation and tracking.
-🛡️ Robust API: Fully documented RESTful API built with Django Rest Framework (DRF)
-🛠️ The Tech Stack
-Layer,     Technology
-Frontend,  "React.js (Vite), Tailwind CSS"
-Backend,    "Django, Django Rest Framework"
-Database,    PostgreSQL
-Queue/Broker, "Celery, Redis"
-Containerization, "Docker, Docker Compose"
-Auth,JWT         (JSON Web Tokens)
+  <p>
+    <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+    <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+    <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
+    <img src="https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white" />
+  </p>
+</div>
 
-🏗️ System Architecture
-BizLedger follows a modern decoupled architecture:
-Nginx: Acts as a Reverse Proxy and serves static files.
-Django API: Handles the core business logic and database interactions.
-Celery Worker: Picks up time-consuming tasks (like generating PDF reports) from the Redis queue.
-PostgreSQL: Relational data storage with optimized indexing for financial records.
+---
 
-🚀 Getting Started (Dockerized)
-To get the entire ecosystem up and running in minutes:
+## 📖 Overview
+**BizLedger** is a full-stack, enterprise-ready financial management system. Designed as a **Multi-Tenant SaaS**, it allows businesses to manage invoices, track expenses, and generate real-time financial reports with zero friction.
 
-Clone the Repo:
+### 🏗️ Architecture at a Glance
 
-Bash
-git clone https://github.com/[your-username]/BizLedger.git
+
+---
+
+## 🔥 Core Features
+
+<details>
+<summary><b>🛡️ Multi-Tenancy & Security</b></summary>
+- Secure data isolation for each business.
+- JWT-based stateless authentication.
+- Role-based access control (RBAC).
+</details>
+
+<details>
+<summary><b>⚡ High-Performance Background Tasks</b></summary>
+- **Celery & Redis** integration for heavy lifting.
+- Async Invoice PDF generation.
+- Automated email triggers for payment reminders.
+</details>
+
+<details>
+<summary><b>📊 Financial Intelligence</b></summary>
+- Dynamic Dashboard with revenue/expense graphs.
+- Tenant-specific financial reporting.
+- Real-time tax and profit calculations.
+</details>
+
+---
+
+## 🛠️ Technical Stack
+
+- **Backend:** Python 3.12, Django 5.x, Django Rest Framework.
+- **Frontend:** React + Vite, Tailwind CSS.
+- **Database:** PostgreSQL (with Docker volumes).
+- **Messaging:** Redis (Broker) + Celery (Worker).
+- **DevOps:** Docker Compose for seamless orchestration.
+
+---
+
+## 🚀 Quick Start (Local Setup)
+
+### 1. Prerequisites
+Make sure you have **Docker Desktop** installed.
+
+### 2. Installation
+```bash
+# Clone the repository
+git clone [https://github.com/Tashif-Toor/BizLedger.git](https://github.com/Tashif-Toor/BizLedger.git)
+
+# Move into the project
 cd BizLedger
-Setup Environment Variables:
-Create a .env file in the backend/ directory using the provided .env.example.
-Run with Docker Compose:
 
-Bash
+# Start the entire ecosystem
 docker-compose up --build
-Access the App:
-Frontend: http://localhost:5173
-Backend API: http://localhost:8000
-
-📈 Roadmap
-[ ] Stripe/Lemon Squeezy Payment Gateway Integration.
-[ ] Automated Monthly Financial Snapshots via Email.
-[ ] AI-Powered Expense Categorization.
-[ ] Mobile App version using React Native.
-
-👨‍💻 Author
-Muhammad Tashif Munir Toor
-Role: AI/ML & Software Engineer
-LinkedIn: https://www.linkedin.com/in/tashiftoor/
-Portfolio: https://github.com/TashifToor
