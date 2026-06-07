@@ -62,7 +62,7 @@
 ### 1. Prerequisites
 Make sure you have **Docker Desktop** installed.
 
-### 2. Installation
+### 2. Installation Step
 ```bash
 # Clone the repository
 git clone [https://github.com/Tashif-Toor/BizLedger.git](https://github.com/Tashif-Toor/BizLedger.git)
